@@ -1,0 +1,72 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Two distinct custom role declarations"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "s1",
+        "name": "Main",
+        "start": 0,
+        "duration": 15360,
+        "role": "intro"
+      },
+      {
+        "id": "s2",
+        "name": "Alt",
+        "start": 15360,
+        "duration": 15360,
+        "role": "other"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "r.main",
+            "name": "Main",
+            "baseRole": "other"
+          },
+          {
+            "id": "r.alt",
+            "name": "Alt",
+            "baseRole": "other"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "s1": "r.main",
+          "s2": "r.alt"
+        },
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

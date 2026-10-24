@@ -1,0 +1,100 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Eight section arrangement"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "s1",
+        "name": "Intro",
+        "start": 0,
+        "duration": 7680,
+        "role": "intro"
+      },
+      {
+        "id": "s2",
+        "name": "Verse A",
+        "start": 7680,
+        "duration": 7680,
+        "role": "other"
+      },
+      {
+        "id": "s3",
+        "name": "Verse B",
+        "start": 15360,
+        "duration": 7680,
+        "role": "other"
+      },
+      {
+        "id": "s4",
+        "name": "Prechorus",
+        "start": 23040,
+        "duration": 7680,
+        "role": "other"
+      },
+      {
+        "id": "s5",
+        "name": "Chorus",
+        "start": 30720,
+        "duration": 7680,
+        "role": "other"
+      },
+      {
+        "id": "s6",
+        "name": "Bridge",
+        "start": 38400,
+        "duration": 7680,
+        "role": "other"
+      },
+      {
+        "id": "s7",
+        "name": "Solo",
+        "start": 46080,
+        "duration": 7680,
+        "role": "other"
+      },
+      {
+        "id": "s8",
+        "name": "Outro",
+        "start": 53760,
+        "duration": 7680,
+        "role": "other"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

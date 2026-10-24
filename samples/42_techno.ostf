@@ -1,0 +1,79 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Techno 128 BPM arrangement"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "s1",
+        "name": "Intro",
+        "start": 0,
+        "duration": 30720,
+        "role": "intro"
+      },
+      {
+        "id": "s2",
+        "name": "Build",
+        "start": 30720,
+        "duration": 30720,
+        "role": "other"
+      },
+      {
+        "id": "s3",
+        "name": "Drop",
+        "start": 61440,
+        "duration": 30720,
+        "role": "other"
+      },
+      {
+        "id": "s4",
+        "name": "Break",
+        "start": 92160,
+        "duration": 30720,
+        "role": "other"
+      },
+      {
+        "id": "s5",
+        "name": "Outro",
+        "start": 122880,
+        "duration": 30720,
+        "role": "other"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 128
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

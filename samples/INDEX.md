@@ -1,0 +1,58 @@
+# Exhaustive positive sample catalog
+
+All examples are complete OSTF 2.3 documents and expected to pass the supplied validator. This catalog covers all **defined structural parameter families** and representative combinations; opaque payload semantics cannot be exhaustively enumerated.
+
+- [`01_minimal.ostf`](01_minimal.ostf) — Minimum OSTF 2.3 envelope
+- [`02_unicode.ostf`](02_unicode.ostf) — Japanese and emoji song title
+- [`03_intro_verse_chorus.ostf`](03_intro_verse_chorus.ostf) — Intro Verse Chorus sections
+- [`04_eight_sections.ostf`](04_eight_sections.ostf) — Eight section arrangement
+- [`05_three_four.ostf`](05_three_four.ostf) — 3/4 waltz timing
+- [`06_six_eight.ostf`](06_six_eight.ostf) — 6/8 ballad meter
+- [`07_seven_eight.ostf`](07_seven_eight.ostf) — 7/8 odd meter
+- [`08_tempo_fast.ostf`](08_tempo_fast.ostf) — Fast tempo 174 BPM
+- [`09_tempo_slow.ostf`](09_tempo_slow.ostf) — Slow tempo 62 BPM
+- [`10_tempo_ramp_points.ostf`](10_tempo_ramp_points.ostf) — Several chronological tempo changes
+- [`11_meter_changes.ostf`](11_meter_changes.ostf) — Meter changes at section boundary
+- [`12_role_custom.ostf`](12_role_custom.ostf) — Custom section role and assignment
+- [`13_role_colors.ostf`](13_role_colors.ostf) — Base role and custom role colors
+- [`14_section_color.ostf`](14_section_color.ostf) — Section presentation color
+- [`15_chord_clip_color.ostf`](15_chord_clip_color.ostf) — Chord clip presentation color
+- [`16_melody_clip_color.ostf`](16_melody_clip_color.ostf) — Melody clip presentation color
+- [`17_all_colors.ostf`](17_all_colors.ostf) — Section and chord and melody color targets
+- [`18_single_chord.ostf`](18_single_chord.ostf) — One chord event carrier
+- [`19_four_chords.ostf`](19_four_chords.ostf) — Four chord clip events
+- [`20_chord_no_id.ostf`](20_chord_no_id.ostf) — Chord without identity when not color-targeted
+- [`21_chord_untimed.ostf`](21_chord_untimed.ostf) — Untimed chord carrier
+- [`22_melody_one_clip.ostf`](22_melody_one_clip.ostf) — Melody with one clip
+- [`23_melody_multi_clip.ostf`](23_melody_multi_clip.ostf) — Melody with four clips
+- [`24_melody_no_id.ostf`](24_melody_no_id.ostf) — Melody clip without ID
+- [`25_melody_untimed.ostf`](25_melody_untimed.ostf) — Melody clip without time fields
+- [`26_lyrics_document.ostf`](26_lyrics_document.ostf) — Lyric document collection
+- [`27_lyrics_phrase.ostf`](27_lyrics_phrase.ostf) — Lyric phrase collection
+- [`28_lyrics_unit.ostf`](28_lyrics_unit.ostf) — Lyric unit collection
+- [`29_lyrics_alignment.ostf`](29_lyrics_alignment.ostf) — Lyric alignment opaque payload
+- [`30_lyrics_japanese.ostf`](30_lyrics_japanese.ostf) — Japanese kana and kanji lyrics
+- [`31_lyrics_english.ostf`](31_lyrics_english.ostf) — English multiword lyric content
+- [`32_lyrics_mixed.ostf`](32_lyrics_mixed.ostf) — Mixed scripts and emoji
+- [`33_lyrics_all_collections.ostf`](33_lyrics_all_collections.ostf) — All four lyric collections
+- [`34_unknown_extension.ostf`](34_unknown_extension.ostf) — Unknown custom namespace carried transparently
+- [`35_opaque_harmony.ostf`](35_opaque_harmony.ostf) — Opaque custom harmony metadata preservation
+- [`36_opaque_melody.ostf`](36_opaque_melody.ostf) — Opaque custom melody metadata preservation
+- [`37_opaque_lyrics.ostf`](37_opaque_lyrics.ostf) — Opaque lyric metadata preservation
+- [`38_empty_harmony.ostf`](38_empty_harmony.ostf) — Empty chord array
+- [`39_empty_melodies.ostf`](39_empty_melodies.ostf) — No melody tracks
+- [`40_zero_lyrics.ostf`](40_zero_lyrics.ostf) — No lyric collections
+- [`41_synthwave.ostf`](41_synthwave.ostf) — Synthwave song outline
+- [`42_techno.ostf`](42_techno.ostf) — Techno 128 BPM arrangement
+- [`43_house.ostf`](43_house.ostf) — House 124 BPM arrangement
+- [`44_trance.ostf`](44_trance.ostf) — Trance 138 BPM arrangement
+- [`45_rock.ostf`](45_rock.ostf) — Rock song sections
+- [`46_piano_ballad.ostf`](46_piano_ballad.ostf) — Piano ballad with lyrics
+- [`47_guitar_riff.ostf`](47_guitar_riff.ostf) — Guitar riff labeled role
+- [`48_jazz.ostf`](48_jazz.ostf) — Jazz turnaround
+- [`49_short_song.ostf`](49_short_song.ostf) — Short one-bar song
+- [`50_long_song.ostf`](50_long_song.ostf) — Long 64-bar carrier
+- [`51_metadata_song.ostf`](51_metadata_song.ostf) — Song extra metadata field
+- [`52_color_two_sections.ostf`](52_color_two_sections.ostf) — Colors for two sections
+- [`53_two_custom_roles.ostf`](53_two_custom_roles.ostf) — Two distinct custom role declarations
+- [`54_full_feature.ostf`](54_full_feature.ostf) — Composite song with roles colors chords melody lyrics

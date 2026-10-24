@@ -1,0 +1,60 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Custom section role and assignment"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "intro",
+        "name": "Intro",
+        "start": 0,
+        "duration": 3840
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "riff.main",
+            "name": "Main Riff",
+            "baseRole": "other"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "intro": "riff.main"
+        },
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {
+            "riff.main": "#C08020"
+          },
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

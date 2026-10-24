@@ -1,0 +1,105 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Melody with four clips"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "intro",
+        "name": "Intro",
+        "start": 0,
+        "duration": 7680
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [
+    {
+      "id": "lead",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "melody1",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 480
+            }
+          ]
+        },
+        {
+          "id": "melody2",
+          "start": 1920,
+          "duration": 1920,
+          "notes": [
+            {
+              "pitch": 61,
+              "start": 0,
+              "duration": 480
+            }
+          ]
+        },
+        {
+          "id": "melody3",
+          "start": 3840,
+          "duration": 1920,
+          "notes": [
+            {
+              "pitch": 62,
+              "start": 0,
+              "duration": 480
+            }
+          ]
+        },
+        {
+          "id": "melody4",
+          "start": 5760,
+          "duration": 1920,
+          "notes": [
+            {
+              "pitch": 63,
+              "start": 0,
+              "duration": 480
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

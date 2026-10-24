@@ -1,0 +1,366 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OSTF 2.3 Draft 112 standalone candidate — nonempty timeline collections",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "ppq",
+    "song",
+    "timeline",
+    "harmony",
+    "melodies",
+    "lyrics",
+    "extensions"
+  ],
+  "properties": {
+    "format": {
+      "const": "OSTF"
+    },
+    "version": {
+      "const": "2.3.0"
+    },
+    "ppq": {
+      "const": 960
+    },
+    "song": {
+      "type": "object"
+    },
+    "timeline": {
+      "type": "object",
+      "required": [
+        "sections",
+        "meterChanges",
+        "tempoChanges"
+      ],
+      "properties": {
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "start",
+              "duration"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "duration": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "role": {
+                "type": "string"
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "meterChanges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "at",
+              "numerator",
+              "denominator"
+            ],
+            "properties": {
+              "at": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "numerator": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "denominator": {
+                "enum": [
+                  1,
+                  2,
+                  4,
+                  8,
+                  16,
+                  32,
+                  64
+                ]
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "tempoChanges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "at",
+              "bpm"
+            ],
+            "properties": {
+              "at": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "bpm": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "harmony": {
+      "type": "object",
+      "properties": {
+        "chords": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "duration": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": true,
+            "dependentRequired": {
+              "start": [
+                "duration"
+              ],
+              "duration": [
+                "start"
+              ]
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "melodies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "clips": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "duration": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "additionalProperties": true,
+              "dependentRequired": {
+                "start": [
+                  "duration"
+                ],
+                "duration": [
+                  "start"
+                ]
+              }
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "lyrics": {
+      "type": "object",
+      "properties": {
+        "documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "phrases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "alignments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "extensions": {
+      "type": "object",
+      "properties": {
+        "org.ostf.section-role-appearance.v1": {
+          "type": "object",
+          "required": [
+            "version",
+            "data"
+          ],
+          "properties": {
+            "version": {
+              "const": "1.0.0"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "roleDefinitions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "name"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "name": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "baseRole": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "sectionRoleAssignments": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "appearance": {
+                  "type": "object",
+                  "properties": {
+                    "roleColors": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "string",
+                        "pattern": "^#[0-9A-Fa-f]{6}$"
+                      }
+                    },
+                    "customRoleColors": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "string",
+                        "pattern": "^#[0-9A-Fa-f]{6}$"
+                      }
+                    },
+                    "objectColors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "targetType",
+                          "targetId",
+                          "color"
+                        ],
+                        "properties": {
+                          "targetType": {
+                            "enum": [
+                              "section",
+                              "chordClip",
+                              "melodyClip"
+                            ]
+                          },
+                          "targetId": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "color": {
+                            "type": "string",
+                            "pattern": "^#[0-9A-Fa-f]{6}$"
+                          }
+                        },
+                        "additionalProperties": true
+                      }
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "description": "Standalone v1; extension scoped validation. Musical event semantics and cross-field constraints require semantic validator."
+}

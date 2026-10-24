@@ -1,0 +1,65 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Intro Verse Chorus sections"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "s1",
+        "name": "Intro",
+        "start": 0,
+        "duration": 15360,
+        "role": "intro"
+      },
+      {
+        "id": "s2",
+        "name": "Verse",
+        "start": 15360,
+        "duration": 15360,
+        "role": "other"
+      },
+      {
+        "id": "s3",
+        "name": "Chorus",
+        "start": 30720,
+        "duration": 15360,
+        "role": "other"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

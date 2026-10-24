@@ -1,0 +1,58 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "3/4 waltz timing"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "s1",
+        "name": "Waltz A",
+        "start": 0,
+        "duration": 11520,
+        "role": "intro"
+      },
+      {
+        "id": "s2",
+        "name": "Waltz B",
+        "start": 11520,
+        "duration": 11520,
+        "role": "other"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 3,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

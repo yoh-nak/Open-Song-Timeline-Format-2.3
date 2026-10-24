@@ -1,0 +1,91 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Rock song sections"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "s1",
+        "name": "Intro",
+        "start": 0,
+        "duration": 15360,
+        "role": "intro"
+      },
+      {
+        "id": "s2",
+        "name": "Verse",
+        "start": 15360,
+        "duration": 15360,
+        "role": "other"
+      },
+      {
+        "id": "s3",
+        "name": "Chorus",
+        "start": 30720,
+        "duration": 15360,
+        "role": "other"
+      },
+      {
+        "id": "s4",
+        "name": "Solo",
+        "start": 46080,
+        "duration": 15360,
+        "role": "other"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord1",
+        "start": 0,
+        "duration": 1920,
+        "symbol": "Am7"
+      },
+      {
+        "id": "chord2",
+        "start": 1920,
+        "duration": 1920,
+        "symbol": "D7"
+      },
+      {
+        "id": "chord3",
+        "start": 3840,
+        "duration": 1920,
+        "symbol": "Gmaj7"
+      }
+    ]
+  },
+  "melodies": [],
+  "lyrics": {},
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}
